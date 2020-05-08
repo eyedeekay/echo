@@ -1,12 +1,12 @@
 package main
 
 import (
-    "net/http"
-    "github.com/eyedeekay/echo/handler"
+	"github.com/eyedeekay/echo/handler"
+	"net/http"
 )
 
-func main(){
-    echobot, _ := echo.NewEchoBot()
+func main() {
+	echobot, _ := echo.NewEchoBot()
 
-    http.ListenAndServe(":7777", echobot)
+	http.ListenAndServe(":7777", echobot)
 }
